@@ -25,9 +25,14 @@ cloudinary.config({
   secure: true,
 });
 const corsOptions = {
-  origin: ["http://localhost:5174", "http://localhost:5173"], // Allows requests from all domains. Specify actual domain in production for security.
+  origin: [
+    "https://ladyline-client.vercel.app",
+    "https://team-seller-omega.vercel.app",
+    "http://localhost: 5173",
+    "http://localhost: 5173",
+  ], // Allows requests from all domains. Specify actual domain in production for security.
   optionsSuccessStatus: 200, // Ensure compatibility by setting OPTIONS success status to 200 OK.
-  methods: ["GET", "POST", "PATCH", "DELETE"], //Allowed methods 
+  methods: ["GET", "POST", "PATCH", "DELETE"], //Allowed methods
   credentials: true, //Allow credentials if needed
 };
 app.use(cors(corsOptions)); //allow cross origin request connecting two different apps
