@@ -28,8 +28,8 @@ const corsOptions = {
   origin: [
     "https://ladyline-client.vercel.app",
     "https://team-seller-omega.vercel.app",
-    "http://localhost: 5173",
-    "http://localhost: 5173",
+    "http://localhost:5173",
+    "http://localhost:5174",
   ], // Allows requests from all domains. Specify actual domain in production for security.
   optionsSuccessStatus: 200, // Ensure compatibility by setting OPTIONS success status to 200 OK.
   methods: ["GET", "POST", "PATCH", "DELETE"], //Allowed methods
